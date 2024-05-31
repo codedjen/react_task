@@ -1,0 +1,23 @@
+.message-box {
+  background-color: black;
+  color: white;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 15px 0 0;
+}
+.message-box p {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+  
+  .message-box a {
+    color: white;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+  

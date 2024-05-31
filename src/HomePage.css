@@ -1,0 +1,13 @@
+.homepage {
+}
+
+.main-content {
+  display: flex;
+  margin: 20px 0 40px 0;
+}
+
+@media screen and (max-width: 420px) {
+  .filter-component {
+    display: none;
+  }
+}

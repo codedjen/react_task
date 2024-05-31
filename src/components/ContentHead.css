@@ -1,0 +1,115 @@
+.sitting-room-layout {
+  padding: 20px;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.breadcrumb button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  padding: 0 15px;
+}
+
+.header {
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 70px;
+  font-style: bold;
+  margin: 0;
+  align-items: left;
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.view-toggle span {
+  font-size: 14px;
+  color: #555;
+}
+
+.view-toggle span,
+.view-toggle .view-buttons {
+  display: flex; 
+  gap: 10px; 
+}
+
+.view-buttons {
+  display: flex;
+}
+
+.view-button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 5px;
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.view-button .rect {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+}
+
+.view-toggle p {
+  text-align: left; 
+  width: 250px; 
+}
+.view-button.grid-2 .rect:nth-child(2) {
+  background-color: #ccc;
+}
+
+.view-button.grid-3 .rect:nth-child(3) {
+  background-color: #ccc;
+}
+
+.view-button.active {
+  border-color: #000;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header h1 {
+    max-width: 100%;
+    font-size: 50px;
+  }
+
+  
+}
+@media (max-width: 500px) {
+  .view-buttons {
+    display: none;
+  }
+}
+@media (max-width: 373px) {
+  .header h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .view-buttons span,
+  .view-button {
+    display: none;
+  }
+
+  .view-toggle p {
+    width: 100%;
+  }
+}
